@@ -136,9 +136,7 @@ print(f"2. Gender: {gender_mean.loc[gender_mean['Average'].idxmax(), 'Gender']} 
 print(f"3. Hometown: Students from {hometown_mean.loc[hometown_mean['Average'].idxmax(), 'Hometown']} recorded the highest sample mean Average score ({hometown_mean['Average'].max()}).")
 ```
 ```
-print(f"1. Track: The {track_mean.loc[track_mean['Average'].idxmax(), 'Track']} track recorded the highest sample mean Average score ({track_mean['Average'].max()}).")
-
-print(f"2. Gender: {gender_mean.loc[gender_mean['Average'].idxmax(), 'Gender']} students recorded the highest sample mean Average score ({gender_mean['Average'].max()}).")
-
-print(f"3. Hometown: Students from {hometown_mean.loc[hometown_mean['Average'].idxmax(), 'Hometown']} recorded the highest sample mean Average score ({hometown_mean['Average'].max()}).")
+1. Track: The Communication track recorded the highest sample mean Average score (67.975).
+,2. Gender: Male students recorded the highest sample mean Average score (67.18333333333334).
+,3. Hometown: Students from Luzon recorded the highest sample mean Average score (68.08333333333333).
 ```
