@@ -26,9 +26,9 @@ mp['Average'] = mp[['Math', 'Electronics', 'GEAS', 'Communication']].mean(axis=1
 the source dataset before the columns are selected.
 > ## Explanation
 
->>For this programming assignment, there are a few things that we need to handle and initialize to even attempt to accomplish any of the programming problems. First off, we need to set up Panda to access the original Excel file and convert it into the **Panda Dataframe**. Next, we need to set up **Matplotlib**, which would allow us to make a graph for the third Programming Problem for later. Lastly, we need to create a new column in the data frame; this column will contain the average grade for each student from the original data frame. With all these setups, we can finally start solving the programming assessments.<br><br>
+>>For this **Programming Assignment**, there are a few things that we need to handle and initialize to even attempt to accomplish any of the programming problems. First off, we need to set up Panda to access the original Excel file and convert it into the **Panda Dataframe**. Next, we need to set up **Matplotlib**, which would allow us to make a graph for the third Programming Problem for later. Lastly, we need to create a new column in the data frame; this column will contain the average grade for each student from the original data frame we are able to do this because when we used the function ***[Average]*** to create a new column named as such, and we use the function [].mean to get the mean/average of all the rows indicated in the [], and lastly the ***axis=1*** will ensure this will happen for each row of student. With all these setups in place, we can finally start solving the programming assessments.<br><br>
 
->>
+>For this **Programming Problem**, we primarily use one function to solve this problem. The instructions indicated that we are asked to create a DataFrame called **Viscom**
 
 > ## Code & Outputs
 ```python
