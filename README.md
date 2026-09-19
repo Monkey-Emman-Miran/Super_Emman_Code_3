@@ -24,6 +24,12 @@ mp['Average'] = mp[['Math', 'Electronics', 'GEAS', 'Communication']].mean(axis=1
 >Create a DataFrame named VisComm containing students whose Hometown is Visayas and whose Track is Communication. Retain only these columns, in the stated order: Name, Gender, Math, Electronics, Average<br><br>
 >Display the resulting DataFrame and its number of rows. Both filtering conditions must be applied to
 the source dataset before the columns are selected.
+> ## Explanation
+
+>>For this programming assignment, there are a few things that we need to handle and initialize to even attempt to accomplish any of the programming problems. First off, we need to set up Panda to access the original Excel file and convert it into the **Panda Dataframe**. Next, we need to set up **Matplotlib**, which would allow us to make a graph for the third Programming Problem for later. Lastly, we need to create a new column in the data frame; this column will contain the average grade for each student from the original data frame. With all these setups, we can finally start solving the programming assessments.<br><br>
+
+>>
+
 > ## Code & Outputs
 ```python
 VisComm = mp[(mp['Hometown'] == 'Visayas') & (mp['Track'] == 'Communication')][['Name', 'Gender', 'Math', 'Electronics', 'Average']]
