@@ -102,3 +102,43 @@ display(hometown_mean)
 1  Mindanao  66.678571
 2   Visayas  65.750000
 ```
+```python
+fig, axes = plt.subplots(1, 3, figsize=(16, 5), sharey=True)
+
+axes[0].bar(track_mean['Track'], track_mean['Average'], color='aquamarine', edgecolor='black')
+axes[0].set_title('Mean Average by Track')
+axes[0].set_xlabel('Track')
+axes[0].set_ylabel('Mean Average Score')
+
+axes[1].bar(gender_mean['Gender'], gender_mean['Average'], color='salmon', edgecolor='black')
+axes[1].set_title('Mean Average by Gender')
+axes[1].set_xlabel('Gender')
+
+axes[2].bar(hometown_mean['Hometown'], hometown_mean['Average'], color='mediumpurple', edgecolor='black')
+axes[2].set_title('Mean Average by Hometown')
+axes[2].set_xlabel('Hometown')
+
+plt.tight_layout()
+plt.show()
+```
+```
+**GRAPH**
+```
+```python
+track_mean.loc[track_mean["Average"].idxmax()];
+gender_mean.loc[gender_mean["Average"].idxmax()];
+hometown_mean.loc[hometown_mean["Average"].idxmax()];
+
+print(f"1. Track: The {track_mean.loc[track_mean['Average'].idxmax(), 'Track']} track recorded the highest sample mean Average score ({track_mean['Average'].max()}).")
+
+print(f"2. Gender: {gender_mean.loc[gender_mean['Average'].idxmax(), 'Gender']} students recorded the highest sample mean Average score ({gender_mean['Average'].max()}).")
+
+print(f"3. Hometown: Students from {hometown_mean.loc[hometown_mean['Average'].idxmax(), 'Hometown']} recorded the highest sample mean Average score ({hometown_mean['Average'].max()}).")
+```
+```
+print(f"1. Track: The {track_mean.loc[track_mean['Average'].idxmax(), 'Track']} track recorded the highest sample mean Average score ({track_mean['Average'].max()}).")
+
+print(f"2. Gender: {gender_mean.loc[gender_mean['Average'].idxmax(), 'Gender']} students recorded the highest sample mean Average score ({gender_mean['Average'].max()}).")
+
+print(f"3. Hometown: Students from {hometown_mean.loc[hometown_mean['Average'].idxmax(), 'Hometown']} recorded the highest sample mean Average score ({hometown_mean['Average'].max()}).")
+```
